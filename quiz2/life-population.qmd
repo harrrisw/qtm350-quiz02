@@ -27,4 +27,4 @@ ggplot(gapminder, aes(x = population_millions, y = life_expectancy)) +
   labs(title = "Life Expectancy vs Population",
        x = "Population (log scale)",
        y = "Life Expectancy")
-'''
+```

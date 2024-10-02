@@ -26,4 +26,4 @@ ggplot(gapminder, aes(x = gdp_per_capita, y = life_expectancy)) +
   labs(title = "Life Expectancy vs GDP per Capita",
        x = "GDP per Capita (log scale)",
        y = "Life Expectancy")
-'''
+```

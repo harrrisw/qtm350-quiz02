@@ -13,6 +13,8 @@ For this example, we will focus on the country "United States."
 ## Graph
 
 ```{r}
+#| echo: true
+#| eval: true
 # Load necessary libraries
 library(ggplot2)
 
@@ -33,3 +35,4 @@ ggplot(country_data, aes(x = year)) +
   scale_color_manual(values = c("Life Expectancy" = "blue", 
                                 "GDP per Capita (x1000)" = "green",
                                 "Population (millions)" = "red"))
+```

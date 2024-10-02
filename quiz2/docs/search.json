@@ -4,7 +4,7 @@
     "href": "life-population.html",
     "title": "Life Expectancy and Population Analysis",
     "section": "",
-    "text": "In this analysis, we explore the relationship between life expectancy and population size."
+    "text": "In this analysis, we explore the relationship between life expectancy and population size.\n\n\n\n#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
   },
   {
     "objectID": "life-population.html#introduction",
@@ -12,6 +12,13 @@
     "title": "Life Expectancy and Population Analysis",
     "section": "",
     "text": "In this analysis, we explore the relationship between life expectancy and population size."
+  },
+  {
+    "objectID": "life-population.html#graph",
+    "href": "life-population.html#graph",
+    "title": "Life Expectancy and Population Analysis",
+    "section": "",
+    "text": "#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
   },
   {
     "objectID": "index.html",
@@ -53,7 +60,7 @@
     "href": "life-gdp.html",
     "title": "Life Expectancy and GDP per Capita Analysis",
     "section": "",
-    "text": "In this analysis, we explore the relationship between life expectancy and GDP per capita using the Gapminder dataset."
+    "text": "In this analysis, we explore the relationship between life expectancy and GDP per capita using the Gapminder dataset.\n\n\n\n#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
   },
   {
     "objectID": "life-gdp.html#introduction",
@@ -61,5 +68,12 @@
     "title": "Life Expectancy and GDP per Capita Analysis",
     "section": "",
     "text": "In this analysis, we explore the relationship between life expectancy and GDP per capita using the Gapminder dataset."
+  },
+  {
+    "objectID": "life-gdp.html#graph",
+    "href": "life-gdp.html#graph",
+    "title": "Life Expectancy and GDP per Capita Analysis",
+    "section": "",
+    "text": "#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
   }
 ]
