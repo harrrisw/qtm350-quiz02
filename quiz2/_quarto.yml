@@ -6,9 +6,14 @@ website:
   title: "quiz2"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: index.qmd  # Link to the home page
+      - text: "Life Expectancy and GDP"
+        href: life-gdp.qmd  # Link to the Life Expectancy and GDP analysis page
+      - text: "Life Expectancy and Population"
+        href: life-population.qmd  # Link to the Life Expectancy and Population analysis page
+      - text: "Country Analysis"
+        href: country.qmd  # Link to the Country Analysis page
 
 format:
   html:
