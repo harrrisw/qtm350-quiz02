@@ -11,6 +11,8 @@ In this analysis, we explore the relationship between life expectancy and GDP pe
 
 ## Graph
 ```{r}
+#| echo: true
+#| eval: true
 # Load necessary libraries
 library(ggplot2)
 
@@ -24,3 +26,4 @@ ggplot(gapminder, aes(x = gdp_per_capita, y = life_expectancy)) +
   labs(title = "Life Expectancy vs GDP per Capita",
        x = "GDP per Capita (log scale)",
        y = "Life Expectancy")
+'''

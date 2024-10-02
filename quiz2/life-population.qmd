@@ -12,6 +12,8 @@ In this analysis, we explore the relationship between life expectancy and popula
 ## Graph
 
 ```{r}
+#| echo: true
+#| eval: true
 # Load necessary libraries
 library(ggplot2)
 
@@ -25,3 +27,4 @@ ggplot(gapminder, aes(x = population_millions, y = life_expectancy)) +
   labs(title = "Life Expectancy vs Population",
        x = "Population (log scale)",
        y = "Life Expectancy")
+'''
