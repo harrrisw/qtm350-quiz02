@@ -1,0 +1,35 @@
+---
+title: "Country Analysis: Life Expectancy, GDP per Capita, and Population"
+---
+
+# Country Analysis
+
+## Introduction
+
+In this analysis, we explore the changes in life expectancy, GDP per capita, and population for a specific country over time.
+
+For this example, we will focus on the country "United States."
+
+## Graph
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+
+# Load the Gapminder dataset
+gapminder <- read.csv("quiz2/gapminder.csv")
+
+# Filter data for the selected country (United States)
+country_data <- subset(gapminder, country == "United States")
+
+# Plot Life Expectancy, GDP per Capita, and Population over time
+ggplot(country_data, aes(x = year)) +
+  geom_line(aes(y = life_expectancy)) +
+  geom_line(aes(y = gdp_per_capita / 1000)) +
+  geom_line(aes(y = population_millions )) +
+  labs(title = "United States: Life Expectancy, GDP, and Population Over Time",
+       x = "Year", y = "") +
+  theme_minimal() +
+  scale_color_manual(values = c("Life Expectancy" = "blue", 
+                                "GDP per Capita (x1000)" = "green",
+                                "Population (millions)" = "red"))

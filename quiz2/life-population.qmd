@@ -1,0 +1,27 @@
+---
+title: "Life Expectancy and Population Analysis"
+format: html
+---
+
+# Life Expectancy and Population
+
+## Introduction
+
+In this analysis, we explore the relationship between life expectancy and population size.
+
+## Graph
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+
+# Load the Gapminder dataset
+gapminder <- read.csv("gapminder.csv")
+
+# Create a scatter plot of Life Expectancy vs Population
+ggplot(gapminder, aes(x = population_millions, y = life_expectancy)) +
+  geom_point(alpha = 0.6) +
+  scale_x_log10() +  # Use log scale for population to manage the wide range of values
+  labs(title = "Life Expectancy vs Population",
+       x = "Population (log scale)",
+       y = "Life Expectancy")
