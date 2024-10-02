@@ -19,7 +19,7 @@ For this example, we will focus on the country "United States."
 library(ggplot2)
 
 # Load the Gapminder dataset
-gapminder <- read.csv("quiz2/gapminder.csv")
+gapminder <- read.csv("gapminder.csv")
 
 # Filter data for the selected country (United States)
 country_data <- subset(gapminder, country == "United States")

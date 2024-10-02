@@ -4,6 +4,7 @@ project:
 
 website:
   title: "quiz2"
+  repo-url: https://github.com/harrrisw/qtm350-quiz02
   navbar:
     left:
       - text: "Home"

@@ -4,7 +4,7 @@
     "href": "life-population.html",
     "title": "Life Expectancy and Population Analysis",
     "section": "",
-    "text": "In this analysis, we explore the relationship between life expectancy and population size.\n\n\n\n#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
+    "text": "In this analysis, we explore the relationship between life expectancy and population size.\n\n\n\n\n# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Create a scatter plot of Life Expectancy vs Population\nggplot(gapminder, aes(x = population_millions, y = life_expectancy)) +\n  geom_point(alpha = 0.6) +\n  scale_x_log10() +  # Use log scale for population to manage the wide range of values\n  labs(title = \"Life Expectancy vs Population\",\n       x = \"Population (log scale)\",\n       y = \"Life Expectancy\")"
   },
   {
     "objectID": "life-population.html#introduction",
@@ -18,7 +18,7 @@
     "href": "life-population.html#graph",
     "title": "Life Expectancy and Population Analysis",
     "section": "",
-    "text": "#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
+    "text": "# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Create a scatter plot of Life Expectancy vs Population\nggplot(gapminder, aes(x = population_millions, y = life_expectancy)) +\n  geom_point(alpha = 0.6) +\n  scale_x_log10() +  # Use log scale for population to manage the wide range of values\n  labs(title = \"Life Expectancy vs Population\",\n       x = \"Population (log scale)\",\n       y = \"Life Expectancy\")"
   },
   {
     "objectID": "index.html",
@@ -32,7 +32,7 @@
     "href": "country.html",
     "title": "Country Analysis: Life Expectancy, GDP per Capita, and Population",
     "section": "",
-    "text": "In this analysis, we explore the changes in life expectancy, GDP per capita, and population for a specific country over time.\nFor this example, we will focus on the country “United States.”"
+    "text": "In this analysis, we explore the changes in life expectancy, GDP per capita, and population for a specific country over time.\nFor this example, we will focus on the country “United States.”\n\n\n\n\n# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Filter data for the selected country (United States)\ncountry_data &lt;- subset(gapminder, country == \"United States\")\n\n# Plot Life Expectancy, GDP per Capita, and Population over time\nggplot(country_data, aes(x = year)) +\n  geom_line(aes(y = life_expectancy)) +\n  geom_line(aes(y = gdp_per_capita / 1000)) +\n  geom_line(aes(y = population_millions )) +\n  labs(title = \"United States: Life Expectancy, GDP, and Population Over Time\",\n       x = \"Year\", y = \"\") +\n  theme_minimal() +\n  scale_color_manual(values = c(\"Life Expectancy\" = \"blue\", \n                                \"GDP per Capita (x1000)\" = \"green\",\n                                \"Population (millions)\" = \"red\"))"
   },
   {
     "objectID": "country.html#introduction",
@@ -40,6 +40,13 @@
     "title": "Country Analysis: Life Expectancy, GDP per Capita, and Population",
     "section": "",
     "text": "In this analysis, we explore the changes in life expectancy, GDP per capita, and population for a specific country over time.\nFor this example, we will focus on the country “United States.”"
+  },
+  {
+    "objectID": "country.html#graph",
+    "href": "country.html#graph",
+    "title": "Country Analysis: Life Expectancy, GDP per Capita, and Population",
+    "section": "",
+    "text": "# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Filter data for the selected country (United States)\ncountry_data &lt;- subset(gapminder, country == \"United States\")\n\n# Plot Life Expectancy, GDP per Capita, and Population over time\nggplot(country_data, aes(x = year)) +\n  geom_line(aes(y = life_expectancy)) +\n  geom_line(aes(y = gdp_per_capita / 1000)) +\n  geom_line(aes(y = population_millions )) +\n  labs(title = \"United States: Life Expectancy, GDP, and Population Over Time\",\n       x = \"Year\", y = \"\") +\n  theme_minimal() +\n  scale_color_manual(values = c(\"Life Expectancy\" = \"blue\", \n                                \"GDP per Capita (x1000)\" = \"green\",\n                                \"Population (millions)\" = \"red\"))"
   },
   {
     "objectID": "about.html",
@@ -60,7 +67,7 @@
     "href": "life-gdp.html",
     "title": "Life Expectancy and GDP per Capita Analysis",
     "section": "",
-    "text": "In this analysis, we explore the relationship between life expectancy and GDP per capita using the Gapminder dataset.\n\n\n\n#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
+    "text": "In this analysis, we explore the relationship between life expectancy and GDP per capita using the Gapminder dataset.\n\n\n\n\n# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Create a scatter plot of Life Expectancy vs GDP per Capita\nggplot(gapminder, aes(x = gdp_per_capita, y = life_expectancy)) +\n  geom_point(alpha = 0.6) +\n  scale_x_log10() +  # Log scale for GDP per Capita\n  labs(title = \"Life Expectancy vs GDP per Capita\",\n       x = \"GDP per Capita (log scale)\",\n       y = \"Life Expectancy\")"
   },
   {
     "objectID": "life-gdp.html#introduction",
@@ -74,6 +81,6 @@
     "href": "life-gdp.html#graph",
     "title": "Life Expectancy and GDP per Capita Analysis",
     "section": "",
-    "text": "#| echo: true #| eval: true # Load necessary libraries library(ggplot2)"
+    "text": "# Load necessary libraries\nlibrary(ggplot2)\n\n# Load the Gapminder dataset\ngapminder &lt;- read.csv(\"gapminder.csv\")\n\n# Create a scatter plot of Life Expectancy vs GDP per Capita\nggplot(gapminder, aes(x = gdp_per_capita, y = life_expectancy)) +\n  geom_point(alpha = 0.6) +\n  scale_x_log10() +  # Log scale for GDP per Capita\n  labs(title = \"Life Expectancy vs GDP per Capita\",\n       x = \"GDP per Capita (log scale)\",\n       y = \"Life Expectancy\")"
   }
 ]
